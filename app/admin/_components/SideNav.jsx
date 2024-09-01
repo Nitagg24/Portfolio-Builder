@@ -2,7 +2,7 @@ import { UserButton } from "@clerk/nextjs";
 import { BarChart, Brush, Layers3, Settings } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import "../../Logo.ico";
+import "../../../public/Logo.png";
 
 function SideNav() {
   const menuList = [
