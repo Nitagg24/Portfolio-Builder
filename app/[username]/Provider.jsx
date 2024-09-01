@@ -18,9 +18,6 @@ function Provider({children}) {
     USERNAME&&GetUserDetails();
   },[USERNAME])
 
-  /**
-   * used to get user detail with Project details
-   */
   const GetUserDetails=async()=>{
     const result=await db.query.userInfo.findMany({
       with:{
@@ -28,7 +25,6 @@ function Provider({children}) {
       },
       where:eq(userInfo.username,USERNAME)
     })
-    console.log("Updating...",result)
     result.length>0? setUserDetail(result[0]):setUserDetail([])
   }
   return (

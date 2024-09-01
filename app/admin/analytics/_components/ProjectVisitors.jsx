@@ -24,8 +24,7 @@ function ProjectVisitors() {
             .groupBy(ProjectClicks.projectRef, project.name)
 
         setData(result);
-        //setProjectClickData(result);
-        console.log(result);
+     
     }
     return (
         <div className='p-7 border rounded-lg'>

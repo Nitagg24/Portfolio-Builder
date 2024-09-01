@@ -27,7 +27,6 @@ function UniqueVisitors() {
         .groupBy(ProjectClicks.month)
         
         const finalResult=[...dummyUniqueVisitor,...result]
-        console.log(finalResult)
         setData(finalResult);
     }
   return (

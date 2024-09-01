@@ -60,13 +60,10 @@ function ProjectListEdit({ projectList, refreshData }) {
 
   const handleFileUploadForProject = (event, projectId, fieldName) => {
     const file = event.target.files[0];
-    console.log("IN PROJECT");
     const fileName = Date.now().toString() + "." + file.type.split("/")[1];
-    console.log(fileName);
     const storageRef = ref(storage, fileName);
     uploadBytes(storageRef, file).then(
       async (snapshot) => {
-        console.log("Uploaded a blob or file!");
         const result = await db
           .update(project)
           .set({
@@ -74,7 +71,6 @@ function ProjectListEdit({ projectList, refreshData }) {
           })
           .where(eq(project.id, projectId));
 
-        console.log("RESULT", result);
         if (result) {
           refreshData();
           toast.success("Saved!", {
@@ -83,7 +79,6 @@ function ProjectListEdit({ projectList, refreshData }) {
           setUpdatePreview(updatePreview + 1);
         }
       },
-      (e) => console.log(e)
     );
   };
 
@@ -133,11 +128,8 @@ function ProjectListEdit({ projectList, refreshData }) {
     const [reorderList] = newList.splice(result.source.index, 1);
     newList.splice(result.destination.index, 0, reorderList);
     setProjectListData(newList);
-    console.log(newList);
 
-    console.log(result);
 
-    //Updating the source to Destination
     const result1 = await db
       .update(project)
       .set({
@@ -149,13 +141,7 @@ function ProjectListEdit({ projectList, refreshData }) {
     if (result) {
       setUpdatePreview(updatePreview + 1);
     }
-    console.log(result1);
-    // const result2=await db.update(project)
-    // .set({
-    //     order:result?.source.index
-    // })
-    // .where( eq(project?.emailRef,user?.primaryEmailAddress.emailAddress))
-    // .where(eq(project.order,result.destination.index))
+    
   };
 
   return (

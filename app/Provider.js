@@ -14,10 +14,6 @@ function Provider({children}) {
     },[user])
 
     const GetUserDetails=async()=>{
-        // const result=await db.select().from(userInfo)
-        // .where(eq(userInfo.email,user?.primaryEmailAddress.emailAddress));
-        // console.log(result)
-        // setUserDetail(result[0]);
         const result=await db.query.userInfo.findMany({
           with:{
             project:true
@@ -25,8 +21,6 @@ function Provider({children}) {
           where:eq(userInfo.email,user?.primaryEmailAddress.emailAddress),
           
         })
-    
-        console.log(result[0])
         setUserDetail(result[0]);
         
     }

@@ -44,11 +44,9 @@ function ProjectList({ projectList }) {
      
         
         setProjectClickData(result);
-        console.log(result);
     }
 
     const GetProjectWiseAnalyticData=(projectId)=>{
-        console.log(projectId)
         let resp=projectClickData?.filter((project)=>project.projectId==projectId)
         let result=[];
 

@@ -21,7 +21,6 @@ function FormContent() {
     .where(eq(project.emailRef,user?.primaryEmailAddress.emailAddress))
     .orderBy(asc(project.order))
 
-    console.log(result);
     setProjectList(result);
 
   }

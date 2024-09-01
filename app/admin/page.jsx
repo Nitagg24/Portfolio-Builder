@@ -17,13 +17,10 @@ function Admin() {
         user&&CheckUser();
     },[user])
 
-    /**
-     * Used to check user already exist of not
-     */
+   
     const CheckUser=async()=>{
     const result=await db.select().from(userInfo)
     .where(eq(userInfo.email,user?.primaryEmailAddress?.emailAddress))
-    console.log(result);
     if(result?.length==0)
     {
         router.replace('/create')

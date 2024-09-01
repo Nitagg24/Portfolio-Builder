@@ -15,7 +15,6 @@ function AddProject({refreshData}) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(e.target[0].value)
         setLoading(true);
         const result = await db.insert(project)
             .values({

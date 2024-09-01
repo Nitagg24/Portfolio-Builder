@@ -4,7 +4,6 @@ import { MapPin, Share } from 'lucide-react'
 import React from 'react'
 
 function UserDetailInfo({userDetail}) {
-    console.log("--",userDetail)
   return userDetail?.name&&(
     <div className='flex flex-col md:justify-center  md:h-screen overflow-hidden'>
         <div className='w-full flex items-center justify-between'>

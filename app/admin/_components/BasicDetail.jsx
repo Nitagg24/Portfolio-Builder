@@ -57,13 +57,10 @@ function BasicDetail() {
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
 
-    // type= image/png
     const fileName = Date.now().toString() + "." + file.type.split("/")[1];
-    console.log(fileName);
     const storageRef = ref(storage, fileName);
     uploadBytes(storageRef, file).then(
       async (snapshot) => {
-        console.log("Uploaded a blob or file!");
         const result = await db
           .update(userInfo)
           .set({
@@ -79,7 +76,6 @@ function BasicDetail() {
           setUpdatePreview(updatePreview + 1);
         }
       },
-      (e) => console.log(e)
     );
   };
   return (
