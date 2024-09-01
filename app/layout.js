@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en" >
       <body className={inter.className}>
       <TwicInstall
-        domain="https://portfoliobuilder.twic"
+        domain="https://portfoliobuilder.twic.pics"
       />
         <div data-theme="light" className="">
         <Provider>
