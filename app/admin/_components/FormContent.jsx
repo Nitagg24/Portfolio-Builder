@@ -29,7 +29,8 @@ function FormContent() {
    
 
   return (
-    <div className='py-12 px-6 overflow-auto'>
+    <div className='px-6 overflow-auto'>
+      <h1 className='text-5xl font-bold pb-7 text-white'>Portfolio Builder</h1>
       <h2 className='text-3xl font-bold'>Start Desiging your portfolio page</h2>
       <BasicDetail/>
       <hr className='my-5'></hr>

@@ -185,7 +185,7 @@ function ProjectListEdit({ projectList, refreshData }) {
                             <TwicPicture
                               src={project.logo}
                               className="w-[50px] h-[50px]
-                                 rounded-full"
+                                 rounded-full mb-2"
                             ></TwicPicture>
                           </label>
                           <input
@@ -205,7 +205,7 @@ function ProjectListEdit({ projectList, refreshData }) {
                             type="text"
                             placeholder="Project / Startup Name"
                             defaultValue={project.name}
-                            className="input input-bordered w-full my-2"
+                            className="input input-bordered w-full my-2 mb-4"
                             onChange={(event) =>
                               onInputChange(
                                 event.target.value,
