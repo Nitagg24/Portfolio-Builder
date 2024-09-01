@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react'
 import { UserDetailContext } from './_context/UserDetailContext'
 function Provider({children}) {
 
-    const {user}=useUser();
+    const {}=useUser();
     const [userDetail,setUserDetail]=useState([]);
     useEffect(()=>{
         user&&GetUserDetails();

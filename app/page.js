@@ -8,11 +8,10 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const route=useRouter();
   useEffect(()=>{
-      route.replace('/admin')
+      route.replace('/')
   },[])
   return (
     <div>
-      
     </div>
 
   );
