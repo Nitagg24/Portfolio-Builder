@@ -16,7 +16,9 @@ function MobilePreview() {
         <iframe
           title="Profile"
           key={updatePreview}
-          src={"https://portfolio-builder-blue.vercel.app/" + userDetail?.username}
+          src={
+            "https://portfolio-builder-blue.vercel.app/" + userDetail?.username
+          }
           width="100%"
           height="100%"
           className="rounded-[25px]"
