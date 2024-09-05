@@ -55,7 +55,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 Nitin Aggarwal
 Project Link: [https://github.com/Nitagg24/Portfolio-Builder]
-
-
-```
-
