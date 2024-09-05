@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Developers Portfolio Builder
 
-## Getting Started
+## Description
+Developers Portfolio Builder is a Next.js application tailored for developers to create and manage their professional portfolios. This app integrates modern web technologies and services, such as real-time database updates, authentication, and interactive components.
 
-First, run the development server:
+## Live Demo
+Visit the live demo here: [Portfolio Builder](https://portfolio-builder-blue.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+- **Responsive Design:** Utilizing Tailwind CSS for a mobile-first approach that ensures a seamless experience on all devices.
+- **Real-time Database:** Powered by Neon Database for dynamic data management and updates.
+- **Interactive Components:** Features like drag-and-drop for portfolio items and notifications using React Beautiful DND and React Toastify enhance user interaction.
+
+## Technologies Used
+- **Next.js:** For server-side rendering and static site generation, ensuring fast load times and improved SEO.
+- **Firebase:** Handles authentication and authorization to secure user data.
+- **Neon Database:** A PostgreSQL-compatible cloud database solution for scalable and efficient data storage.
+- **Drizzle ORM:** Manages database interactions seamlessly within the Next.js environment.
+- **Recharts and SweetAlert2:** Used for creating dynamic charts and alerting users with beautiful, responsive popups.
+
+## Setup
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Nitagg24/Portfolio-Builder.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env.local` file at the root of your project and populate it with your environment variables as described in `.env.sample`.
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Available Scripts
+In the project directory, you can run:
+
+- `npm run dev` - Runs the app in development mode on `http://localhost:3000`.
+- `npm run build` - Builds the app for production to the `.next` folder.
+- `npm run start` - Starts a Node.js production server.
+- `npm run lint` - Lints and fixes files.
+- `npm run db:push` - Pushes the current database schema to Neon Cloud.
+- `npm run db:studio` - Opens Drizzle Kit studio for database management.
+
+## Contributing
+Contributions are what make the open-source community thrive. Any contributions you make are **greatly appreciated**. Please ensure to update tests as appropriate.
+
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+Nitin Aggarwal
+Project Link: [https://github.com/Nitagg24/Portfolio-Builder]
+
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
