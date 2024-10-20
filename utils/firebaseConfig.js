@@ -4,12 +4,12 @@ import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_KEY,
-  authDomain: "portfolio-builder-8e9e5.firebaseapp.com",
-  projectId: "portfolio-builder-8e9e5",
-  storageBucket: "portfolio-builder-8e9e5.appspot.com",
-  messagingSenderId: "83025793436",
-  appId: "1:83025793436:web:eec978ad4155dcc634f859",
-  measurementId: "G-TJRG2DGE6Z"
+  authDomain: "portfoliobuilder-aa2ad.firebaseapp.com",
+  projectId: "portfoliobuilder-aa2ad",
+  storageBucket: "portfoliobuilder-aa2ad.appspot.com",
+  messagingSenderId: "451043382709",
+  appId: "1:451043382709:web:caeaf32ae43a12dbabf5fc",
+  measurementId: "G-XMXR0HHEY2"
 };
 
 const app = initializeApp(firebaseConfig);
