@@ -35,7 +35,7 @@ function SideNav() {
     <div className="p-4 bg-[#00000052] h-screen">
       <div className="mb-5  flex justify-center">
         <Link href="/admin">
-          <img src="Logo.png" alt="Logo" className="h-12" />
+          <img src="Logo.png" alt="Logo" className="h-16 object-cover" />
         </Link>
       </div>
       {menuList.map((menu, index) => (
